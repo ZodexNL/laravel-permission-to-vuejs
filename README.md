@@ -49,7 +49,7 @@ public function share(Request $request)
 
 ## How to use
 
-You can use the following code project:
+You can use the following code in your project:
 
 ```html
 <div v-if="can('Permission name')">

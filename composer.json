@@ -1,20 +1,20 @@
 {
-    "name": "ahmedsaoud31/laravel-permission-to-vuejs",
-    "description": "Laravel Permission Package To Use it in VueJs",
+    "name": "zodexnl/spatie-permission-to-vue-inertia",
+    "description": "Use the Spatie permission package in Vue with Inertia",
     "type": "plugin",
     "require": {
-        "spatie/laravel-permission": ">=2.0"
+        "spatie/laravel-permission": ">=5.4.0"
     },
     "autoload": {
         "psr-4": {
-            "LaravelAndVueJS\\": "src"
+            "SpatiePermissionsToVueInertia\\": "src"
         }
     },
     "license": "MIT",
     "authors": [
         {
-            "name": "Ahmed Abeoelsaoud",
-            "email": "ahmedsaoud31@gmail.com"
+            "name": "ZodexNL",
+            "email": "zodexnl@gmail.com"
         }
     ],
     "minimum-stability": "dev"

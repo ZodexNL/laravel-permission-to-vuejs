@@ -10,11 +10,11 @@ You need to use Inertia & Vue3 in order for this package to work.
 ## Installation
 
 ```json
-composer require name/package
+composer require zodexnl/spatie-permission-to-vue-inertia
 ```
 
 ## Config
-First, add the following trait to your `User` model(s):
+First, add the following trait to your `User` model:
 
 
 ```php
@@ -29,7 +29,7 @@ class User extends Authenticatable
 
 Secondly, you want to add the `spatie-permission-to-vuejs` plugin in `app.js` file:
 ```js
-import LaravelPermissionToVueJS from "../../vendor/user/package/src/js;
+import LaravelPermissionToVueJS from "../../vendor/zodexnl/spatie-permission-to-vue-inertia/src/js;
 import Vue from 'vue';
 
 Vue.use(plugin);
@@ -48,6 +48,8 @@ public function share(Request $request)
 ```
 
 ## How to use
+
+You can use the following code project:
 
 ```html
 <div v-if="can('Permission name')">

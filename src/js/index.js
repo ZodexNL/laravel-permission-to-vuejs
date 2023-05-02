@@ -1,6 +1,6 @@
 export default {
-	install(Vue, options) {
-		Vue.prototype.can = function (value) {
+	install(app) {
+		app.config.globalProperties.can = function (value) {
 			var permissions = this.$page.props.permissions.permissions
 			var _return = false;
 			if (!Array.isArray(permissions)) {
@@ -25,7 +25,7 @@ export default {
 			return _return;
 		}
 
-		Vue.prototype.is = function (value) {
+		app.config.globalProperties.is = function (value) {
 			var roles = this.$page.props.permissions.roles;
 			var _return = false;
 
